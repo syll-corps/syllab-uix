@@ -1,0 +1,28 @@
+@import "../../styles/utils";
+
+.strengths-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include adaptive-font(16, 13);
+  font-weight: 500;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    $icon-size: 4.166em;
+    width: $icon-size;
+    height: $icon-size;
+
+    margin-bottom: 0.83em;
+
+    border-radius: 50%;
+
+    img {
+      width: 53%;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../styles/utils";
+
+.reg-benefits {
+
+  padding: 127px 0;
+
+  &__title {
+    margin-bottom: 3.3em;
+    line-height: 1.25em;
+
+    @include adaptive-font(36, 20);
+    font-weight: 600;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include adaptive-font(18, 16);
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 978.98px) {
+  .reg-benefits {
+    &__title {
+      text-align: center;
+    }
+
+    &__list {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 694px) {
+  .reg-benefits {
+    padding: 65px 0;
+
+    &__title {
+      margin-bottom: 2.3em;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      row-gap: 2em;
+    }
+  }
+}
+

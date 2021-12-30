@@ -1,0 +1,41 @@
+@import "../../styles/utils";
+
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4C6FFF;
+
+  &__image {
+    max-width: 640px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @include adaptive-font(42, 26);
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__text {
+    max-width: 402px;
+    margin: 0 auto;
+
+    @include adaptive-font(20, 15);
+    text-align: center;
+    line-height: 1.66em;
+    color: #E0DFDF;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-404 {
+    &__image {
+      margin-bottom: 30px;
+    }
+  }
+}

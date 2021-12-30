@@ -1,0 +1,98 @@
+$animation-duration: 300ms;
+$button-size: 2.2em;
+
+.nav-menu {
+  &__burger-button {
+    width: $button-size;
+    height: $button-size;
+    display: none;
+  }
+}
+
+.nav {
+  position: relative;
+
+  &__top-row {
+    display: none;
+    margin-bottom: 120px;
+  }
+
+  &__close-button {
+    width: $button-size;
+    height: $button-size;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__blur {
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 800;
+
+    background-color: #000;
+    opacity: 0;
+    transition: opacity $animation-duration;
+
+    &_active {
+      opacity: 0.4;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nav-menu {
+    &__burger-button {
+      display: inline-block;
+    }
+  }
+
+  .nav {
+    display: none;
+
+    &_active {
+      display: block;
+    }
+
+    &__content {
+      height: 100vh;
+      width: 50%;
+      padding: 1.41em 1.4em;
+
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+
+      background-color: #4C6FFF;
+
+      transform: translateX(100%);
+      transition: transform $animation-duration;
+
+      &_active {
+        transform: translateX(0);
+      }
+    }
+
+    &__top-row {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__blur {
+      display: block;
+    }
+  }
+}

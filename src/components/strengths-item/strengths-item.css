@@ -1,0 +1,21 @@
+.strengths-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(13px + 3 * ((100vw - 320px) / 1600));
+  font-weight: 500;
+}
+.strengths-item__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.166em;
+  height: 4.166em;
+  margin-bottom: 0.83em;
+  border-radius: 50%;
+}
+.strengths-item__icon img {
+  width: 53%;
+}
+
+/*# sourceMappingURL=strengths-item.css.map */

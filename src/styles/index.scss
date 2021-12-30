@@ -1,0 +1,73 @@
+//----------------------- null style -----------------------
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,*::before,*::after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer; background-color: transparent;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a,a:visited{text-decoration: none;}
+a{color: #000}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;width: 100%;}
+h2 {font-size: 1em}
+
+//----------------------- custom style -----------------------
+
+@import "fonts.css";
+
+body {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+.container {
+  max-width: 1595px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1586.98px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
+@media (max-width: 600.98px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+

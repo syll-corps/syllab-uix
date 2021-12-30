@@ -1,0 +1,47 @@
+.reg-benefits-item {
+  display: flex;
+  align-items: flex-start;
+
+  margin: 0px 10px 40px 0;
+
+  max-width: 320px;
+
+  &__icon {
+    $icon-size: 3.33em;
+
+    width: $icon-size;
+    height: $icon-size;
+    min-width: 20px;
+
+    margin-right: 1.1em;
+  }
+
+  &__text {
+    max-width: 13.2em;
+
+    line-height: 1.66em;
+    font-weight: 500;
+    color: #A1A1A1;
+  }
+}
+
+@media (max-width: 694px) {
+  .reg-benefits-item {
+    margin: 0 auto;
+    max-width: none;
+
+    &__text {
+      max-width: 30em;
+    }
+
+    &__icon {
+      $icon-size: 2.3em;
+
+      width: $icon-size;
+      height: $icon-size;
+
+      margin-top: 5px;
+      margin-right: 0.8em;
+    }
+  }
+}

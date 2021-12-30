@@ -1,0 +1,33 @@
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4C6FFF;
+}
+.page-404__image {
+  max-width: 640px;
+  margin-bottom: 15px;
+}
+.page-404__title {
+  margin-bottom: 15px;
+  font-size: calc(26px + 16 * ((100vw - 320px) / 1600));
+  text-align: center;
+  color: #ffffff;
+}
+.page-404__text {
+  max-width: 402px;
+  margin: 0 auto;
+  font-size: calc(15px + 5 * ((100vw - 320px) / 1600));
+  text-align: center;
+  line-height: 1.66em;
+  color: #E0DFDF;
+}
+
+@media (max-width: 575.98px) {
+  .page-404__image {
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=page-404.css.map */
