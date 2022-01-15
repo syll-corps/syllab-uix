@@ -20,6 +20,12 @@
   border-radius: 50%;
   background-color: #4C6FFF;
 }
+.header__company-name {
+  transition: color 300ms;
+}
+.header__company-name:hover {
+  color: #4C6FFF;
+}
 
 @media (max-width: 991.98px) {
   .header {
@@ -30,6 +36,11 @@
 @media (max-width: 767px) {
   .header__company-logo {
     margin-right: 0.35em;
+  }
+}
+@media (max-width: 575.98px) {
+  .header {
+    padding: 10px 0px;
   }
 }
 

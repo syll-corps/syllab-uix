@@ -78,7 +78,9 @@
 
 @media (max-width: 575.98px) {
   .site-description {
-
+    &__right-side {
+      display: none;
+    }
   }
 }
 
@@ -89,9 +91,6 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       row-gap: 2em;
-    }
-
-    &__description {
     }
   }
 }

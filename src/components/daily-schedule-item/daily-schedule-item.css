@@ -1,0 +1,82 @@
+.daily-schedule-item__time, .daily-schedule-item__auditorium, .daily-schedule-item__teacher {
+  display: flex;
+  align-items: center;
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
+  font-weight: 500;
+  color: #717171;
+}
+.daily-schedule-item__time svg, .daily-schedule-item__auditorium svg, .daily-schedule-item__teacher svg {
+  margin-right: 9px;
+  font-size: 1em;
+  color: currentColor;
+}
+
+.daily-schedule-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 480px;
+  padding: 1.5em 3.27em;
+  border-radius: 27px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
+  font-weight: 500;
+}
+.daily-schedule-item__row:first-child {
+  margin-bottom: 1.48em;
+}
+.daily-schedule-item__subject {
+  display: flex;
+  align-items: center;
+  font-size: 1.23em;
+  font-weight: 600;
+  line-height: 1.25em;
+}
+.daily-schedule-item__subject div {
+  width: 0.708em;
+  height: 0.708em;
+  margin-right: 0.708em;
+  border-radius: 50%;
+}
+.daily-schedule-item__info {
+  display: flex;
+  margin-bottom: 1.48em;
+}
+.daily-schedule-item__time {
+  margin-right: 1.48em;
+}
+.daily-schedule-item_default {
+  background-color: #E3E8FC;
+}
+.daily-schedule-item_default .daily-schedule-item__type {
+  color: #6281FF;
+}
+.daily-schedule-item_exam {
+  background-color: #FDEAFF;
+}
+.daily-schedule-item_exam .daily-schedule-item__type {
+  color: #E1384C;
+}
+.daily-schedule-item_distant {
+  background-color: #F7EDDA;
+}
+.daily-schedule-item_distant .daily-schedule-item__type {
+  color: #C08D28;
+}
+
+@media (max-width: 1140px) {
+  .daily-schedule-item {
+    min-width: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .daily-schedule-item {
+    padding: 1.1em 1.6em;
+  }
+}
+@media (max-width: 575.98px) {
+  .daily-schedule-item {
+    border-radius: 15px;
+  }
+}
+
+/*# sourceMappingURL=daily-schedule-item.css.map */

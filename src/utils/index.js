@@ -1,15 +1,26 @@
 import {
-  toggleActiveClass,
+  toggleClass,
   blockClick,
   getCssPropValue
 } from "./jquery";
-import { delayActionDelegate } from "./js-helpers";
+import { delayActionDelegate, getItemSafely, getLastWord, getValueByPath } from "./js-helpers";
 import { secToMilliSec } from "./transformers";
+import {
+  createPageText,
+  createColorObj,
+  createTeacherObj
+} from "./creators";
 
 export {
-  toggleActiveClass,
+  toggleClass,
   blockClick,
   delayActionDelegate,
   getCssPropValue,
-  secToMilliSec
+  secToMilliSec,
+  createPageText,
+  createColorObj,
+  getItemSafely,
+  createTeacherObj,
+  getLastWord,
+  getValueByPath
 };

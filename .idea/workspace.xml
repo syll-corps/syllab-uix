@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92b1d5f9-47da-4adb-95f7-227481c309f2" name="Changes" comment="" />
+    <list default="true" id="92b1d5f9-47da-4adb-95f7-227481c309f2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/header/burger-menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/header/cancel-close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/reg-benefits/mark-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/site-description/credibility.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/site-description/flexibility.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/site-description/responsiveness.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/site-description/safety.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/404-page/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/nav-menu-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/reg-benefits-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/containers/site-description-container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-layout/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-layout/main-layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-layout/main-layout.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-layout/main-layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-layout/main-layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav-menu/nav-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav-menu/nav-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav-menu/nav-menu.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav-menu/nav-menu.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav-menu/nav-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav-menu/nav-menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav-menu/nav-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav-menu/nav-menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-404-content/page-404.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-404-content/page-404.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-404-content/page-404.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-404-content/page-404.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-404-content/page-404.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-404-content/page-404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/page-404-content/page-404.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/page-404-content/page-404.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/main-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/main-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reg-benefits-item/reg-benefits-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reg-benefits-item/reg-benefits-item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reg-benefits-item/reg-benefits-item.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reg-benefits-item/reg-benefits-item.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reg-benefits-item/reg-benefits-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reg-benefits-item/reg-benefits-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reg-benefits-item/reg-benefits-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reg-benefits-item/reg-benefits-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reg-benefits/reg-benefits.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reg-benefits/reg-benefits.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reg-benefits/reg-benefits.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reg-benefits/reg-benefits.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reg-benefits/reg-benefits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reg-benefits/reg-benefits.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reg-button-block/reg-button-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reg-button-block/reg-button-block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/site-description/site-description.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/site-description/site-description.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/site-description/site-description.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/site-description/site-description.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/site-description/site-description.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/site-description/site-description.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/site-description/site-description.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/site-description/site-description.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/strengths-item/strengths-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/strengths-item/strengths-item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/strengths-item/strengths-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/strengths-item/strengths-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/strengths-item/strengths-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/strengths-item/strengths-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/utils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/utils.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/js-helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/js-helpers.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +73,9 @@
         <option value="SCSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,11 +102,11 @@
       <recent name="E:\JS\React\syllab-uix\src\assets\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JS\React\syllab-uix\src\components\layouts" />
       <recent name="E:\JS\React\syllab-uix\src\assets\animations" />
       <recent name="E:\JS\React\syllab-uix\src\assets\human" />
       <recent name="E:\JS\React\syllab-uix\src\styles" />
       <recent name="E:\JS\React\syllab-uix\src\assets\icons\header" />
-      <recent name="E:\JS\React\syllab-uix\src\assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,7 +129,24 @@
       <workItem from="1640416390482" duration="3526000" />
       <workItem from="1640443182368" duration="24518000" />
       <workItem from="1640502878880" duration="638000" />
-      <workItem from="1640855771154" duration="7770000" />
+      <workItem from="1640855771154" duration="11332000" />
+      <workItem from="1640883841001" duration="11175000" />
+      <workItem from="1640904105401" duration="3847000" />
+      <workItem from="1640944612827" duration="1294000" />
+      <workItem from="1641064015965" duration="9757000" />
+      <workItem from="1641142586818" duration="6067000" />
+      <workItem from="1641202192297" duration="678000" />
+      <workItem from="1641210051256" duration="13006000" />
+      <workItem from="1641289604937" duration="14996000" />
+      <workItem from="1641369854970" duration="10087000" />
+      <workItem from="1641463334746" duration="4104000" />
+      <workItem from="1642003882584" duration="4288000" />
+      <workItem from="1642067511394" duration="13724000" />
+      <workItem from="1642090420241" duration="10020000" />
+      <workItem from="1642111875209" duration="740000" />
+      <workItem from="1642166474897" duration="7259000" />
+      <workItem from="1642179944207" duration="5311000" />
+      <workItem from="1642235653135" duration="3421000" />
     </task>
     <servers />
   </component>

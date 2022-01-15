@@ -1,0 +1,84 @@
+.teachers-rating-item__like, .teachers-rating-item__crown, .teachers-rating-item__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teachers-rating-item {
+  display: flex;
+  align-items: center;
+  max-width: 550px;
+  padding: 0.7em 0.48em 0.48em 0.6em;
+  box-shadow: 0px 4px 14px rgba(184, 184, 184, 0.25);
+  border-radius: 10px;
+}
+.teachers-rating-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+.teachers-rating-item__avatar {
+  width: 3em;
+  height: 3em;
+  margin-right: 0.6em;
+  border-radius: 50%;
+}
+.teachers-rating-item__avatar svg {
+  font-size: 2em;
+}
+.teachers-rating-item__row {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.teachers-rating-item__row:first-child {
+  margin-bottom: 7px;
+}
+.teachers-rating-item__row:last-child {
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.8em;
+}
+.teachers-rating-item__info {
+  flex-grow: 1;
+}
+.teachers-rating-item__full-name {
+  font-weight: 600;
+  margin-right: 2em;
+}
+.teachers-rating-item__crown {
+  position: absolute;
+  right: 0;
+  top: -6px;
+  width: 1.34em;
+  height: 1.34em;
+}
+.teachers-rating-item__crown svg {
+  color: #F1CF19;
+  font-size: 1.35em;
+}
+.teachers-rating-item__comment {
+  font-size: 0.75em;
+  color: #575757;
+  font-weight: 500;
+}
+.teachers-rating-item__likes-count {
+  margin-top: 3px;
+  margin-right: 5px;
+  font-weight: 500;
+}
+.teachers-rating-item__like {
+  width: 1.55em;
+  height: 1.55em;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #EEA1B5;
+  transition: background-color 300ms;
+}
+.teachers-rating-item__like:hover {
+  background-color: #ee91a2;
+}
+.teachers-rating-item__like svg {
+  font-size: 0.85em;
+}
+
+/*# sourceMappingURL=teachers-rating-item.css.map */

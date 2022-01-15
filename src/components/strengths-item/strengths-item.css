@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: calc(13px + 3 * ((100vw - 320px) / 1600));
+  font-size: calc(14px + 2 * ((100vw - 320px) / 1600));
   font-weight: 500;
 }
 .strengths-item__icon {
@@ -12,10 +12,19 @@
   width: 4.166em;
   height: 4.166em;
   margin-bottom: 0.83em;
+  background-color: #2041C8;
   border-radius: 50%;
+  transition: background-color 300ms;
 }
-.strengths-item__icon img {
-  width: 53%;
+.strengths-item__icon:hover {
+  background-color: #fff;
+}
+.strengths-item__icon:hover svg {
+  color: #4C6FFF;
+}
+.strengths-item__icon svg {
+  font-size: 2em;
+  transition: color 300ms;
 }
 
 /*# sourceMappingURL=strengths-item.css.map */

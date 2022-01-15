@@ -38,18 +38,40 @@ ul li{list-style: none;}
 img{vertical-align: top;width: 100%;}
 h2 {font-size: 1em}
 
-//----------------------- custom style -----------------------
+//----------------------- custom styles -----------------------
 
-@import "fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;900&display=swap');
 
 body {
-  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 .container {
   max-width: 1595px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+.styled-scroll {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 0.7em;
+
+    &-button {
+      display: none;
+    }
+
+    &-track {
+      background-color: #E3E8FC;
+      border-radius: 10px;
+    }
+
+    &-thumb {
+      background-color: #6281FF;
+      border-radius: 10px;
+    }
+  }
 }
 
 @media (max-width: 1586.98px) {
@@ -66,7 +88,7 @@ body {
 
 @media (max-width: 575.98px) {
   .container {
-    padding: 0 20px;
+    padding: 0 12px;
   }
 }
 

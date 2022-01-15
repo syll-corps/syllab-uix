@@ -1,0 +1,73 @@
+@import "../../styles/utils";
+
+.daily-schedule {
+  display: flex;
+  margin-bottom: 7.8em;
+
+  width: 100%;
+
+  @include adaptive-font(18, 15);
+
+  &__day {
+    height: 100%;
+    padding-right: 1.1em;
+    margin-right: 3.38em;
+    text-align: center;
+    line-height: 1.8em;
+    border-right: 3px solid #C4C4C4;
+  }
+
+  &__day-of-week {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #BABABA;
+  }
+
+  &__date {
+    font-size: 1.7em;
+    font-weight: 600;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .daily-schedule {
+    flex-direction: column;
+
+    &__day {
+      display: flex;
+
+      padding-right: 0;
+      padding-bottom: 0.7em;
+      margin-right: 0;
+      margin-bottom: 1.5em;
+
+      text-align: left;
+      border-right: none;
+      border-bottom: 3px solid #C4C4C4;
+    }
+
+    &__day-of-week {
+      font-size: 1.2em;
+      margin-right: 0.5em;
+    }
+
+  }
+}
+
+@media (max-width: 767.98px) {
+  .daily-schedule {
+    margin-bottom: 3.5em;
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+}

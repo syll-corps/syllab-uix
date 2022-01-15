@@ -5,10 +5,12 @@
   max-width: 320px;
 }
 .reg-benefits-item__icon {
-  width: 3.33em;
-  height: 3.33em;
   min-width: 20px;
   margin-right: 1.1em;
+  color: #4C6FFF;
+}
+.reg-benefits-item__icon svg {
+  font-size: 3.33em;
 }
 .reg-benefits-item__text {
   max-width: 13.2em;
@@ -26,10 +28,11 @@
     max-width: 30em;
   }
   .reg-benefits-item__icon {
-    width: 2.3em;
-    height: 2.3em;
     margin-top: 5px;
     margin-right: 0.8em;
+  }
+  .reg-benefits-item__icon svg {
+    font-size: 1.3em;
   }
 }
 

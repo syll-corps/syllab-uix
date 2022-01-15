@@ -1,0 +1,35 @@
+.schedule-input {
+  width: 378px;
+  margin-right: 25px;
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
+}
+.schedule-input__label {
+  display: block;
+  margin-bottom: 11px;
+  color: #AEAEAE;
+}
+.schedule-input__input {
+  width: 100%;
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
+  padding: 0.55em 0.83em;
+  line-height: 1.66em;
+  border: 1px solid #AEAEAE;
+  border-radius: 10px;
+  transition: border 300ms;
+}
+.schedule-input__input::placeholder {
+  color: #E0DFDF;
+}
+.schedule-input__input:focus {
+  border: 1px solid #6281FF;
+}
+
+@media (max-width: 585px) {
+  .schedule-input {
+    width: 100%;
+    max-width: 480px;
+    margin-right: 0;
+  }
+}
+
+/*# sourceMappingURL=schedule-input.css.map */

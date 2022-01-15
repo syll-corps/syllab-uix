@@ -9,6 +9,19 @@
   max-width: 640px;
   margin-bottom: 15px;
 }
+.page-404__icon {
+  display: none;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 500ms;
+}
+.page-404__icon svg {
+  color: #fff;
+  font-size: 10em;
+}
+.page-404__icon_rotate {
+  transform: rotate(360deg);
+}
 .page-404__title {
   margin-bottom: 15px;
   font-size: calc(26px + 16 * ((100vw - 320px) / 1600));
@@ -26,7 +39,10 @@
 
 @media (max-width: 575.98px) {
   .page-404__image {
-    margin-bottom: 30px;
+    display: none;
+  }
+  .page-404__icon {
+    display: block;
   }
 }
 

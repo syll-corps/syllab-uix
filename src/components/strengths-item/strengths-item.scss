@@ -1,11 +1,12 @@
 @import "../../styles/utils";
+@import "../../styles/vars";
 
 .strengths-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @include adaptive-font(16, 13);
+  @include adaptive-font(16, 14);
   font-weight: 500;
 
   &__icon {
@@ -13,16 +14,27 @@
     align-items: center;
     justify-content: center;
 
-    $icon-size: 4.166em;
-    width: $icon-size;
-    height: $icon-size;
+    $size: 4.166em;
+    width: $size;
+    height: $size;
 
     margin-bottom: 0.83em;
 
+    background-color: #2041C8;
     border-radius: 50%;
+    transition: background-color $animation-duration;
 
-    img {
-      width: 53%;
+    &:hover {
+      background-color: #fff;
+
+      svg {
+        color: #4C6FFF;
+      }
+    }
+
+    svg {
+      font-size: 2em;
+      transition: color $animation-duration;
     }
   }
 }

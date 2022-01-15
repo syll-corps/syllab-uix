@@ -1,0 +1,31 @@
+@import '../../styles/utils';
+
+.teachers-rating {
+
+  &__title {
+    @include adaptive-font(24, 17);
+    margin-right: 5px;
+    margin-bottom: 33px;
+
+    font-weight: 600;
+  }
+
+  &__button {
+    margin-top: 2px;
+    svg {
+      font-size: 1.6em;
+    }
+  }
+
+  &__list {
+    @include adaptive-font(23, 17);
+    padding-right: 15px;
+    max-height: calc((0.7em + 0.48em + 1.35em + 12px + 0.75em + 0.85em + 0.4em) * 2);
+  }
+}
+
+@media (max-width: 585px) {
+  .teachers-rating {
+    display: none;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-import './reg-button-block.css';
+import './reg-button-block.scss';
 
 
 const RegButtonBlock = () => {
@@ -14,7 +14,7 @@ const RegButtonBlock = () => {
                 Зарегистрироваться
               </button>
             </NavLink>
-          <NavLink to={'/schedule'} className="reg-button-block__link">
+          <NavLink to={'/schedule/group'} className="reg-button-block__link">
             Продолжить без регистрации
           </NavLink>
         </div>

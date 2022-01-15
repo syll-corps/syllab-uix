@@ -1,21 +1,20 @@
 import React, { useMemo, useCallback, useState, useEffect } from 'react';
+import { IoMdMenu, IoMdClose } from 'react-icons/all';
 import { v4 } from 'uuid';
 
 import NavMenuItem from "../nav-menu-item";
 import {
-  toggleActiveClass,
+  toggleClass,
   blockClick,
   delayActionDelegate,
   getCssPropValue,
   secToMilliSec
 } from "../../utils";
-import BurgerMenuIcon from '../../assets/icons/header/burger-menu.svg';
-import CancelCloseIcon from '../../assets/icons/header/cancel-close.svg';
 
-import './nav-menu.css';
+import './nav-menu.scss';
 
 
-const NavMenu = ({ links }) => {
+const NavMenu = () => {
 
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [animationDuration, setAnimationDuration] = useState(null);
@@ -27,9 +26,9 @@ const NavMenu = ({ links }) => {
 
   const toggleClasses = useCallback((isMenuActive) => {
     const [nav, navContent, navBlur] = ['nav', 'nav__content', 'nav__blur'];
-    delayActionDelegate(() => toggleActiveClass(navBlur), isMenuActive ? null : 0);
-    delayActionDelegate(() => toggleActiveClass(navContent), isMenuActive ? null : 0);
-    delayActionDelegate(() => toggleActiveClass(nav), isMenuActive ? animationDuration : null);
+    delayActionDelegate(() => toggleClass(navBlur, 'active'), isMenuActive ? null : 0);
+    delayActionDelegate(() => toggleClass(navContent,'active'), isMenuActive ? null : 0);
+    delayActionDelegate(() => toggleClass(nav,'active'), isMenuActive ? animationDuration : null);
   }, [animationDuration]);
 
   const handleClick = useCallback(() => {
@@ -38,6 +37,14 @@ const NavMenu = ({ links }) => {
     toggleClasses(isMenuActive);
   }, [isMenuActive, toggleClasses, animationDuration]);
 
+  const links = useMemo(() => (
+    [
+      { to: '/schedule/groups', text: 'Расписание' },
+      { to: '/info', text: 'Информация' },
+      { to: '/help', text: 'Помощь' },
+    ]
+  ), []);
+
   const renderedLinks = useMemo(() => (
     links.map(link => <NavMenuItem {...link} handleClick={handleClick} key={v4()}/>)
   ), [links, handleClick]);
@@ -45,13 +52,13 @@ const NavMenu = ({ links }) => {
   return (
     <div className="nav-menu">
       <button className="nav-menu__burger-button" onClick={handleClick}>
-        <img src={BurgerMenuIcon} alt="burger menu icon"/>
+        <IoMdMenu/>
       </button>
       <nav className="nav-menu__nav nav">
         <div className="nav__content">
           <div className="nav__top-row">
             <button className="nav__close-button" onClick={handleClick}>
-              <img src={CancelCloseIcon} alt="cancel close icon"/>
+              <IoMdClose/>
             </button>
           </div>
           <menu className="nav__menu">

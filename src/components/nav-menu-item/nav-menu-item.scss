@@ -1,17 +1,20 @@
+@import "../../styles/vars";
+
 .nav-menu-item {
   font-size: 18px;
 
   &__text {
     font-weight: 600;
+    transition: color $animation-duration;
+
+    &:hover {
+      color: #4C6FFF;
+    }
   }
 
   &:not(:last-child) {
     margin-right: 8em;
   }
-}
-
-.active:not(.header__main-page-link) {
-  color: #4C6FFF;
 }
 
 @media (max-width: 991.98px) {
@@ -20,9 +23,5 @@
       margin-right: 0;
       margin-bottom: 4.4em;
     }
-  }
-
-  .active:not(.header__main-page-link) {
-    color: #fff;
   }
 }

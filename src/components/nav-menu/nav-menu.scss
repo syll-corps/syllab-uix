@@ -1,11 +1,12 @@
 $animation-duration: 300ms;
-$button-size: 2.2em;
 
 .nav-menu {
   &__burger-button {
-    width: $button-size;
-    height: $button-size;
     display: none;
+
+    svg {
+      font-size: 3em;
+    }
   }
 }
 
@@ -18,13 +19,17 @@ $button-size: 2.2em;
   }
 
   &__close-button {
-    width: $button-size;
-    height: $button-size;
+    svg {
+      font-size: 3em;
+    }
   }
 
   &__list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    max-width: 600px;
   }
 
   &__blur {
@@ -38,12 +43,12 @@ $button-size: 2.2em;
     left: 0;
     z-index: 800;
 
-    background-color: #000;
+    background-color: red; // #000
     opacity: 0;
     transition: opacity $animation-duration;
 
     &_active {
-      opacity: 0.4;
+      opacity: 1; // 0.4
     }
   }
 }
@@ -65,7 +70,7 @@ $button-size: 2.2em;
     &__content {
       height: 100vh;
       width: 50%;
-      padding: 1.41em 1.4em;
+      padding: 20px 30px;
 
       position: fixed;
       top: 0;

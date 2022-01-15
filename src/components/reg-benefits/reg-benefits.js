@@ -3,10 +3,19 @@ import { v4 } from 'uuid';
 
 import RegBenefitsItem from "../reg-benefits-item";
 
-import './reg-benefits.css';
+import './reg-benefits.scss';
 
 
-const RegBenefits = ({ items }) => {
+const RegBenefits = () => {
+
+  const items = useMemo(() => (
+    [
+      'Информация публикуемая в соответствии с ПП РФ №582 от 10.07.2013 и приказом',
+      'Информация публикуемая в соответствии с ПП РФ №582 от 10.07.2013 и приказом',
+      'Информация публикуемая в соответствии с ПП РФ №582 от 10.07.2013 и приказом',
+      'Информация публикуемая в соответствии с ПП РФ №582 от 10.07.2013 и приказом'
+    ]
+  ), []);
 
   const renderedItems = useMemo(() => (
     items.map(item => <RegBenefitsItem text={item} key={v4()}/>)

@@ -1,0 +1,25 @@
+.teachers-rating__title {
+  font-size: calc(17px + 7 * ((100vw - 320px) / 1600));
+  margin-right: 5px;
+  margin-bottom: 33px;
+  font-weight: 600;
+}
+.teachers-rating__button {
+  margin-top: 2px;
+}
+.teachers-rating__button svg {
+  font-size: 1.6em;
+}
+.teachers-rating__list {
+  font-size: calc(17px + 6 * ((100vw - 320px) / 1600));
+  padding-right: 15px;
+  max-height: calc((2.53em + 12px + 0.75em + 0.85em + 0.4em) * 2);
+}
+
+@media (max-width: 585px) {
+  .teachers-rating {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=teachers-rating.css.map */

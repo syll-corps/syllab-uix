@@ -1,0 +1,25 @@
+.schedule-top-row__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 108px 0 120px 0;
+}
+
+@media (max-width: 1256px) {
+  .schedule-top-row__container {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 80px;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 54px 0 60px 0;
+  }
+}
+@media (max-width: 520px) {
+  .schedule-top-row__container {
+    padding: 35px 0 40px 0;
+  }
+}
+
+/*# sourceMappingURL=schedule-top-row.css.map */

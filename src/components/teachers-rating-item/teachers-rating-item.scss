@@ -1,0 +1,118 @@
+@import '../../styles/utils';
+@import '../../styles/vars';
+
+%center-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teachers-rating-item {
+  display: flex;
+  align-items: center;
+  max-width: 550px;
+
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+  padding: 0.7em 0.48em 0.48em 0.6em;
+
+  box-shadow: 0px 4px 14px rgba(184, 184, 184, 0.25);
+  border-radius: 10px;
+
+  &__avatar {
+    @extend %center-icon;
+
+    $size: 3em;
+    width: $size;
+    height: $size;
+
+    margin-right: 0.6em;
+
+    border-radius: 50%;
+
+    svg {
+      font-size: 2em;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-end;
+
+    position: relative;
+
+    &:first-child {
+      margin-bottom: 7px;
+    }
+
+    &:last-child {
+      justify-content: flex-end;
+      align-items: center;
+
+      font-size: 0.8em;
+    }
+  }
+
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__full-name {
+    font-weight: 600;
+    margin-right: 2em;
+  }
+
+  &__crown {
+    position: absolute;
+
+    right: 0;
+    top: -6px;
+
+    @extend %center-icon;
+    $size: 1.34em;
+    width: $size;
+    height: $size;
+
+    svg {
+      color: #F1CF19;
+      font-size: 1.35em;
+    }
+  }
+
+  &__comment {
+    font-size: 0.75em;
+    color: #575757;
+    font-weight: 500;
+  }
+
+  &__likes-count {
+    margin-top: 3px;
+    margin-right: 5px;
+
+    font-weight: 500;
+  }
+
+  &__like {
+    @extend %center-icon;
+
+    $size: 1.55em;
+    width: $size;
+    height: $size;
+
+    color: #fff;
+    cursor: pointer;
+
+    border-radius: 50%;
+    background-color: #EEA1B5;
+    transition: background-color $animation-duration;
+
+    &:hover {
+      background-color: #ee91a2;
+    }
+
+    svg {
+      font-size: 0.85em;
+    }
+  }
+}

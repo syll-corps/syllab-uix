@@ -1,15 +1,26 @@
 import React, { useMemo } from 'react';
+import { FiSettings, FiThumbsUp, BsShieldCheck, FiUnlock } from "react-icons/all";
+import { v4 } from 'uuid';
 
 import StrengthsItem from "../strengths-item";
-
-import './site-description.css';
 import AnimatedHuman from '../../assets/animations/human.gif';
 
+import './site-description.scss';
 
-const SiteDescription = ({ strengths }) => {
+
+const SiteDescription = () => {
+
+  const strengths = useMemo(() => (
+    [
+      { icon: <FiUnlock/>, text: 'Безопасность' },
+      { icon: <BsShieldCheck/>, text: 'Достоверность'},
+      { icon: <FiThumbsUp/>, text: 'Отзывчивость' },
+      { icon: <FiSettings/>, text: 'Гибкость' }
+    ]
+  ), []);
 
   const renderedStrengths = useMemo(() => (
-    strengths.map(item => <StrengthsItem {...item}/>)
+    strengths.map(item => <StrengthsItem {...item} key={v4()}/>)
   ), [strengths]);
 
   return (

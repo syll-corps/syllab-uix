@@ -1,0 +1,64 @@
+@import '../../styles/utils';
+
+.schedule-favourite-items {
+  display: inline-block;
+  flex-grow: 0;
+
+  &__label {
+    display: block;
+
+    margin-bottom: 11px;
+
+    @include adaptive-font(18, 14);
+    white-space: break-spaces;
+    word-break: break-word;
+    color: #AEAEAE;
+  }
+
+  &__list {
+    @include adaptive-font(18, 15);
+
+    max-height: calc(1em + 0.55em * 2 + 0.66em + 4px);
+
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    column-gap: 0.27em;
+    row-gap: 0.55em;
+    overflow-y: auto;
+
+    max-width: 240px;
+  }
+
+  &__item {
+    display: inline;
+
+    padding: 2px 10px;
+
+    font-size: 0.89em;
+    font-weight: 400;
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    p {
+      display: inline;
+      word-break: break-all;
+    }
+  }
+}
+
+@media (max-width: 585px) {
+  .schedule-favourite-items {
+    &__list {
+      max-height: none;
+      max-width: none;
+
+      row-gap: 0.4em;
+    }
+
+    &__item {
+      padding: 5px 10px 4px 10px;
+    }
+  }
+}

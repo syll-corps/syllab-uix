@@ -8,12 +8,13 @@
 
   &__icon {
     $icon-size: 3.33em;
-
-    width: $icon-size;
-    height: $icon-size;
     min-width: 20px;
-
     margin-right: 1.1em;
+    color: #4C6FFF;
+
+    svg {
+      font-size: $icon-size;
+    }
   }
 
   &__text {
@@ -35,13 +36,14 @@
     }
 
     &__icon {
-      $icon-size: 2.3em;
-
-      width: $icon-size;
-      height: $icon-size;
+      $icon-size: 1.3em;
 
       margin-top: 5px;
       margin-right: 0.8em;
+
+      svg {
+        font-size: $icon-size;
+      }
     }
   }
 }

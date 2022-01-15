@@ -13,6 +13,22 @@
     margin-bottom: 15px;
   }
 
+  &__icon {
+    display: none;
+    margin-bottom: 30px;
+    text-align: center;
+    transition: transform 500ms;
+
+    svg {
+      color: #fff;
+      font-size: 10em;
+    }
+  }
+
+  &__icon_rotate {
+    transform: rotate(360deg);
+  }
+
   &__title {
     margin-bottom: 15px;
 
@@ -35,7 +51,11 @@
 @media (max-width: 575.98px) {
   .page-404 {
     &__image {
-      margin-bottom: 30px;
+      display: none;
+    }
+
+    &__icon {
+      display: block;
     }
   }
 }

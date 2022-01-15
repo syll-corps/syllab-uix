@@ -54,6 +54,11 @@
     margin-bottom: 0.8em;
   }
 }
+@media (max-width: 575.98px) {
+  .site-description__right-side {
+    display: none;
+  }
+}
 @media (max-width: 432px) {
   .site-description__strengths {
     display: grid;

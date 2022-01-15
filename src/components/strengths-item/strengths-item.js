@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './strengths-item.css';
+import './strengths-item.scss';
 
 
-const StrengthsItem = ({ icon, text, selected }) => {
+const StrengthsItem = ({ icon, text }) => {
   return (
     <li className="strengths-item">
-      <div className="strengths-item__icon" style={{ backgroundColor: selected ? '#fff' : '#2041C8' }}>
-        <img src={icon} alt="icon"/>
+      <div className="strengths-item__icon">
+        {icon}
       </div>
       <span className="strengths-item__text">{text}</span>
     </li>

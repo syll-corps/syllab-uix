@@ -1,16 +1,15 @@
 import React, { Fragment } from 'react';
 
-import {
-  SiteDescriptionContainer,
-  RegBenefitsContainer
-} from "../containers";
+import SiteDescription from "../site-description";
+import RegBenefits from "../reg-benefits";
 import RegButtonBlock from "../reg-button-block";
+
 
 const MainPage = () => {
   return (
     <Fragment>
-      <SiteDescriptionContainer/>
-      <RegBenefitsContainer/>
+      <SiteDescription/>
+      <RegBenefits/>
       <RegButtonBlock/>
     </Fragment>
   );

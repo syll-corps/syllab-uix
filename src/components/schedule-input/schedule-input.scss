@@ -1,0 +1,48 @@
+@import '../../styles/utils';
+@import '../../styles/vars';
+
+.schedule-input {
+  width: 378px;
+  margin-right: 25px;
+
+  @include adaptive-font(18, 15);
+
+  &__label {
+    display: block;
+
+    margin-bottom: 11px;
+
+    color: #AEAEAE;
+  }
+
+  &__input {
+    width: 100%;
+
+    @include adaptive-font(18, 15);
+
+    padding: 0.55em 0.83em;
+
+    line-height: 1.66em;
+
+    border: 1px solid #AEAEAE;
+    border-radius: 10px;
+
+    transition: border $animation-duration;
+
+    &::placeholder {
+      color: #E0DFDF;
+    }
+
+    &:focus {
+      border: 1px solid #6281FF;
+    }
+  }
+}
+
+@media (max-width: 585px) {
+  .schedule-input {
+    width: 100%;
+    max-width: 480px;
+    margin-right: 0;
+  }
+}

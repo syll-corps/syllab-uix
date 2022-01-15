@@ -1,10 +1,9 @@
 import $ from 'jquery';
 
-const toggleActiveClass = (className) => {
+const toggleClass = (className, toggledClass) => {
   const element = $(`.${className}`);
-  element.toggleClass(`${className}_active`);
+  element.toggleClass(`${className}_${toggledClass}`);
 };
-
 
 const blockClick = (className, timeout) => {
   const element = $(`.${className}`);
@@ -21,7 +20,7 @@ const getCssPropValue = (className, prop) => {
 };
 
 export {
-  toggleActiveClass,
+  toggleClass,
   blockClick,
   getCssPropValue
 };

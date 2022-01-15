@@ -1,0 +1,106 @@
+@import "../../styles/utils";
+
+%info-template {
+  display: flex;
+  align-items: center;
+
+  @include adaptive-font(18, 15);
+  font-weight: 500;
+  color: #717171;
+
+  svg {
+    margin-right: 9px;
+    font-size: 1em;
+    color: currentColor;
+  }
+}
+
+.daily-schedule-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-width: 480px;
+
+  padding: 1.5em 3.27em;
+  border-radius: 27px;
+
+  @include adaptive-font(18, 14);
+  font-weight: 500;
+
+  &__row {
+    &:first-child {
+      margin-bottom: 1.48em;
+    }
+  }
+
+  &__subject {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.23em;
+    font-weight: 600;
+    line-height: 1.25em;
+
+    div {
+      $size: 0.708em;
+      width: $size;
+      height: $size;
+      margin-right: $size;
+      border-radius: 50%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin-bottom: 1.48em;
+  }
+
+  &__time, &__auditorium, &__teacher {
+    @extend %info-template;
+  }
+
+  &__time {
+    margin-right: 1.48em;
+  }
+
+
+  &_default {
+    background-color: #E3E8FC;
+    .daily-schedule-item__type {
+      color: #6281FF;
+    }
+  }
+
+  &_exam {
+    background-color: #FDEAFF;
+    .daily-schedule-item__type {
+      color: #E1384C;
+    }
+  }
+
+  &_distant {
+    background-color: #F7EDDA;
+    .daily-schedule-item__type {
+      color: #C08D28;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .daily-schedule-item {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .daily-schedule-item {
+    padding: 1.1em 1.6em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .daily-schedule-item {
+    border-radius: 15px;
+  }
+}

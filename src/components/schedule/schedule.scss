@@ -1,0 +1,91 @@
+@import "../../styles/utils";
+
+.schedule {
+  &__wrapper {
+    padding-top: 97px;
+    border-top: 1px solid rgba(180, 180, 180, 0.27);
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    @include adaptive-font(36, 20);
+  }
+
+  &__list {
+    max-width: 1104px;
+  }
+}
+
+.schedule-tip {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 56px;
+
+  column-gap: 20px;
+  row-gap: 10px;
+
+  &__default {
+    color: #9caae1;
+  }
+
+  &__distant {
+    color: #eaccae;
+  }
+
+  &__exam {
+    color: #e6afef;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1586.98px) {
+  .schedule {
+    &__container {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+
+  .schedule-tip {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1256px) {
+  .schedule {
+    &__wrapper {
+      padding-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  .schedule {
+    &__title {
+      text-align: left;
+    }
+  }
+
+  .schedule-tip {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .schedule {
+    &__wrapper {
+      padding-top: 30px;
+    }
+  }
+}

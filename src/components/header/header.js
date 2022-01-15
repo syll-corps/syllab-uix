@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-import { NavMenuContainer } from "../containers";
+import NavMenu from '../nav-menu';
 
-import './header.css';
+import './header.scss';
 
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
             <div className="header__company-logo"/>
             <h2 className="header__company-name">T-Syllab</h2>
           </NavLink>
-          <NavMenuContainer/>
+          <NavMenu/>
         </div>
       </div>
     </header>

@@ -18,7 +18,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    @include adaptive-font(18, 16);
+    @include adaptive-font(18, 15);
     font-weight: 500;
   }
 }

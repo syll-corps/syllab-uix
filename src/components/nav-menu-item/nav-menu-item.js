@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-import './nav-menu-item.css';
+import './nav-menu-item.scss';
 
 
 const NavMenuItem = ({ to, text, handleClick }) => {

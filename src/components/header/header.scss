@@ -1,4 +1,5 @@
 @import "../../styles/utils";
+@import "../../styles/vars";
 
 .header {
   padding: 20px 0;
@@ -28,6 +29,13 @@
     border-radius: 50%;
     background-color: #4C6FFF;
   }
+
+  &__company-name {
+    transition: color $animation-duration;
+    &:hover {
+      color: #4C6FFF;
+    }
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -42,5 +50,11 @@
     &__company-logo {
       margin-right: 0.35em;
     }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    padding: 10px 0px;
   }
 }
